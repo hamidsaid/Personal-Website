@@ -1,0 +1,341 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+
+body {
+  background: white;
+  font-family: "Montserrat";
+  align-items: center;
+}
+
+nav{
+  width:100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+nav h1 a{
+  margin-left: 60px;
+  font-weight: 900;
+  font-size: 40px;
+  color: crimson;
+    text-decoration: none;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  list-style: none;
+  padding:10px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: black;
+}
+
+ul li a:hover{
+  color:crimson;
+
+}
+
+/* body */
+
+.wrapper{
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 0px;
+  margin-left: 230px;
+}
+
+.typewriter h1 {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 30px;
+  letter-spacing: 0.09rem;
+  font-weight: normal;
+  overflow: hidden;
+  border-right: .15em solid black;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto;
+  animation: typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+.shape1{
+  height: 10px;
+  width:20%;
+  background-color: grey;
+  animation:
+    nudge 3s linear 1 alternate;
+    margin: 0px 0px 0px 220px;
+}
+
+#circle{
+  position: absolute;
+  height: 8px;
+  width :8px;
+  border: 3px solid #C0C0C0;
+  border-radius: 100px;
+
+}
+
+#circle.one{
+  top: 50%;
+  left:20%;
+
+}
+#circle.two{
+  top: 20%;
+  right:70%;
+
+}
+
+#circle.three{
+  top: 90%;
+  left:50%;
+
+}
+
+#circle.four{
+  top: 40%;
+  right:20%;
+  border-color: crimson;
+}
+
+#box{
+  position: absolute;
+  height: 8px;
+  width :8px;
+  border: 3px solid #C0C0C0;
+
+}
+
+#box.one{
+  top: 50%;
+  left:40%;
+}
+
+#box.two{
+  top: 90%;
+  left:20%;
+  border-color: crimson;
+}
+
+#triangle {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-left: 15px solid #C0C0C0;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+}
+
+#triangle.one{
+  top: 90%;
+  left:80%;
+
+}
+#triangle.two{
+  top: 25%;
+  left:60%;
+
+}
+/* div content */
+.content{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 100px 0px 20px 25%;
+}
+
+.para{
+  font-family: "Montserrat";
+  font-weight: 200;
+  text-align: center;
+  font-size:16px;
+   line-height: 1.9;
+  letter-spacing: 0.25px;
+}
+
+
+
+  /*icons */
+.icons{
+ width: 100%;
+ height: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 50px;
+
+}
+
+  .icons a{
+   color:black;
+   padding: 15px;
+  }
+
+  .icons a:hover{
+    color: crimson;
+  }
+
+  /* PortFolio html */
+.portfolio{
+  background:white;
+   font-family: "Montserrat";
+}
+
+.main-body{
+  padding: 30px;
+
+}
+
+h3{
+ margin: 20px 0px 30px 60px;
+ text-transform: uppercase;
+
+}
+
+  .row1, .row2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+  }
+
+
+
+
+ .card{
+   text-align: center;
+   width:360px;
+   height:280px;
+   border: 1px solid crimson;
+   margin: 10px 0 20px 40px;
+   border-radius: 8%;
+
+ }
+ .card h2{
+   padding:40px 0px;
+ }
+
+.card h4 a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  margin: 90px 0px 0px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+ .card:hover{
+   border: 1px solid yellow;
+   background-color: black;
+   color:white;
+   transition: 0.8s;
+ }
+.card:hover h4 a{
+  color:#F08772;
+}
+
+
+/* Contact Section */
+.section-title {
+	font-size: 2rem;
+	font-weight: 200;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+#contact .contact {
+  display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 40%;
+}
+.contact-items{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#contact .contact-item {
+  width:360px;
+  height:280px;
+  border: 1px solid crimson;
+  margin: 10px 0 20px 40px;
+  border-radius: 8%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#contact .contact-item:hover {
+
+  border: 1px solid yellow;
+  background-color: black;
+  color:white;
+  transition: 0.8s;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.phone{
+  padding: 0px 60px;
+}
+
+#contact .contact-info h1 {
+	font-size: 2.3rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.2rem;
+	line-height: 2rem;
+	font-weight: 300;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+/* shape1 animations */
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+    background-color: grey;
+  }
+
+  50% {
+    transform: translate(70px, 0);
+    background-color: crimson;
+  }
+
+}
